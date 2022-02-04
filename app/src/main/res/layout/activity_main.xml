@@ -35,13 +35,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:text="Sqlite"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/recylerViewBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/recylerViewBtn"
         app:layout_constraintTop_toBottomOf="@+id/fragmentBtn" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/recylerViewBtn"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:text="Recyler View"
@@ -58,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="@+id/button5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/recylerViewBtn" />
 
     <Button
         android:id="@+id/button5"

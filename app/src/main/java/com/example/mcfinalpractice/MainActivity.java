@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity{
 
-    Button framgemntBtn, sqliteBtn;
+    Button framgemntBtn, sqliteBtn, recyclerViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         framgemntBtn = findViewById(R.id.fragmentBtn);
         sqliteBtn = findViewById(R.id.sqliteBtn);
+        recyclerViewBtn = findViewById(R.id.recylerViewBtn);
         framgemntBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,6 +29,14 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),SqliteDB_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        recyclerViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),RecylerViewActivity.class);
                 startActivity(intent);
             }
         });

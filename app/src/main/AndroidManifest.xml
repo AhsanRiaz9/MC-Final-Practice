@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MCFinalPractice">
         <activity
+            android:name=".RecylerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".SqliteDB_Activity"
             android:exported="false" />
         <activity
